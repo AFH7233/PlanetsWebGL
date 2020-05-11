@@ -1,0 +1,73 @@
+Ni val
+(Specifies the optical density for the surface. This is also known as index of refraction. The values can range from 0.001 to 10. A value of 1.0 means that light does not bend as it passes through an object. Increasing the optical_density increases the amount of bending. Glass has an index of refraction of about 1.5. Values of less than 1.0 produce bizarre results and are not recommended).
+
+d val
+(Specifies the dissolve for the current material. The value represents the amount this material dissolves into the background. A factor of 1.0 is fully opaque. This is the default when a new material is created. A factor of 0.0 is fully dissolved, i.e., completely transparent).
+
+Tr val
+Transmission Filter: Tf 1.0000 1.0000 1.0000 
+(Any light passing through the object is filtered by the transmission filter, which only allows the specific colors to pass through. For example, Tf 0 1 0 allows all the green to pass through and filters out all the red and blue).
+
+Ambient Component: Ka r g b
+Diffuse Component: Kd r g b
+Specular Component: Ks r g b
+Specular Exponent: Ns val
+
+https://www.loc.gov/preservation/digital/formats/fdd/fdd000508.shtml
+
+Jupiter
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+
+Rings
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 0.000000
+
+Io
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 1.000000
+
+Europa
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.012000 0.012000 0.012000
+Ni 1.000000
+d 1.000000
+
+4096 Body
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.020000 0.020000 0.020000
+Ni 1.000000
+d 1.000000
+
+Callisto
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 1.000000
+
+Poles
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.001176 0.001176 0.001176
+Ni 1.000000
+d 0.200000
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="thirdPartyJs/gl-matrix.js"></script>
+    <script src="thirdPartyJs/webgl-obj-loader.js"></script>
+    <script src="js/object3D.js"></script>
+    <script src="js/group3D.js"></script>
+    <script src="js/texture.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <canvas id="glCanvas" width="1080" height="720"></canvas>
+    <div class="slidecontainer" width="1080">
+        <label class="input_label">Camera X</label><input type="range" min="0" max="15000" value="50"  class="slider" id="cameraX"><br>
+        <input type="range" min="-100" max="100" value="0"  class="slider" id="cameraX_fine">
+        <label class="input_label">Camera Z</label><input type="range" min="0" max="20000" value="5000"  class="slider" id="cameraZ"><br>
+        <input type="range" min="-500" max="500" value="0"  class="slider" id="cameraZ_fine">
+    </div>
+</body>
+</html>
