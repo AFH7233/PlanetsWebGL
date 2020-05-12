@@ -72,8 +72,8 @@ function drawScene(gl, programInfo, group) {
     const projectionMatrix = mat4.create();
     const cameraMatrix = mat4.create();
 
-    var cameraX = 4000;
-    var cameraZ = 12000;
+    var cameraX = 5000;
+    var cameraZ = 13000;
 
     mat4.perspective(projectionMatrix,
                     fieldOfView,
@@ -95,8 +95,8 @@ function drawScene(gl, programInfo, group) {
             mat4.lookAt(cameraMatrix, [-cameraX,0.0,-cameraZ],[-cameraX,0.0,0.0],[0.0,1.0,0.0]);        
         }
     } else {
-        var posiionEnOrbita = [0.0, 1.0, 1.0, 1.0, 1.0, 9.0, 5.0, 3.0, 3.0];
-        var posiionEnY = [100.0, 100.0, 100.0, 100.0, 100.0, 1200.0, 1200.0, 800.0, 800.0];
+        var posiionEnOrbita = [0.0, 1.0, 2.0, 2.0, 1.0, 9.0, 5.0, 3.0, 3.0];
+        var posiionEnY = [100.0, 300.0, 300.0, 300.0, 300.0, 1200.0, 1200.0, 800.0, 800.0];
         var eye = [group.objectList[groupIndex].objectList[0].position.map(e => e), 1.0].flat();
         var center = [group.objectList[groupIndex].objectList[0].position.map(e => e), 1.0].flat();
     
@@ -117,9 +117,6 @@ function drawScene(gl, programInfo, group) {
         vec4.transformMat4(center, center, centerMatrix);
         mat4.lookAt(cameraMatrix, eye,center,axis);
     }
-
-
-    var frontal = document.getElementById("frontal").checked;
 
     
     const modelViewMatrix = mat4.create();
