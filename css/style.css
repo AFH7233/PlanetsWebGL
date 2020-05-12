@@ -30,5 +30,30 @@
   }
 
   .slidecontainer {
-    width: 1080px;
+      width: 100%;
+  }
+
+  .controlers{
+
+    width: 500px;
+}
+
+  .container{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  canvas{
+    background: url('../estrellas.jpg')
+  }
+
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 25pxpx;
   }

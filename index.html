@@ -12,12 +12,37 @@
 
 </head>
 <body>
+    <h1>Sistema solar</h1>
+    <div class="container" >
     <canvas id="glCanvas" width="1080" height="720"></canvas>
-    <div class="slidecontainer" width="1080">
-        <label class="input_label">Camera X</label><input type="range" min="0" max="15000" value="50"  class="slider" id="cameraX"><br>
-        <input type="range" min="-100" max="100" value="0"  class="slider" id="cameraX_fine">
-        <label class="input_label">Camera Z</label><input type="range" min="0" max="20000" value="5000"  class="slider" id="cameraZ"><br>
-        <input type="range" min="-500" max="500" value="0"  class="slider" id="cameraZ_fine">
+    <div class="controlers">
+        <h2>Controles</h2>
+        <div class="slidecontainer">
+            <label class="input_label">Velocidad</label>
+            <input type="range" min="0" max="3000" value="0"  class="slider" id="velocidad">
+        </div>
+        <div class="slidecontainer">
+            <label class="input_label">Acercar - Alejar</label><input type="range" min="-25" max="25" value="0"  class="slider" id="fov"><br>
+            <label class="input_label">Vista</label><br>
+            <input type="radio"  name="vista" value="frontal" id = "frontal" checked>
+            <label for="male">Frontal</label><br>
+            <input type="radio" name="vista" value="superior" id="superior">
+            <label for="female">Superior</label><br><br>
+            <label for="female">Ver planeta: </label><br>
+            <select id="planetaIndex">
+                <option value=0>Sistema solar</option>
+                <option value=1>Mercurio</option>
+                <option value=2>Venus</option>
+                <option value=3>Tierra</option>
+                <option value=4>Marte</option>
+                <option value=5>Jupiter</option>
+                <option value=6>Saturno</option>
+                <option value=7>Urano</option>
+                <option value=8>Neptuno</option>
+            </select>
+        </div>
+
+    </div>
     </div>
 </body>
 </html>
